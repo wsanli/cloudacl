@@ -1,0 +1,42 @@
+﻿.green {color:#bf2f2f;}
+.red {color:#1d7631;}
+.blue {color:#2b57af;}
+body{ 
+      font: 12px/15px "adelle-1","adelle-2", 'Helvetica Neue', Helvetica, Arial, sans-serif; overflow-x:hidden; 
+      }
+h1 { font-size: 20px; margin: 0; color: #666;}
+input[type="text"],input[type="password"],input[type="email"] {height: 22px; vertical-align: bottom; margin: 3px 0;}
+input[type="checkbox"] 
+{
+    cursor:pointer;
+    width: 19px;
+    height: 19px;
+    margin: 3px 0;
+    padding: 0 5px 0 0;
+    float: left;
+}
+.checkbox, .checkbox label {line-height: 25px; vertical-align:bottom; }
+.checkbox label {cursor:pointer !important; margin-left:5px;}
+.radiolist {margin:0 auto; display:block;}
+button {
+    color:#0d0d0d;
+    margin:3px 0;
+    padding:6px 8px; 
+    vertical-align: bottom;
+    text-align:left;
+    background-color:#FDFDFD;
+    border:1px solid #D2DBED;
+    -moz-border-radius:1px;    
+    border-radius:1px;
+    font: 12px/15px "adelle-1","adelle-2", 'Helvetica Neue', Helvetica, Arial, sans-serif; overflow-x:hidden; 
+    background-image: -moz-linear-gradient(top, #ffffff, #dedede);
+    text-shadow: 0px 1px white;
+}
+button:hover {
+    cursor:pointer !important;
+    background-color:#F3F7FC;
+    border:1px solid #999999;
+    -moz-border-radius:2px;    
+    background-image: -moz-linear-gradient(top, #dedede, #ffffff);
+}
+.clearfix {clear: both;}

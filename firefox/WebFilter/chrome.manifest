@@ -1,0 +1,8 @@
+content   cloudaclWebFilter                 chrome/content/
+skin      cloudaclWebFilter   classic/1.0   chrome/skin/
+locale    cloudaclWebFilter   en-US         chrome/locale/en-US/
+
+
+
+overlay     chrome://browser/content/browser.xul            chrome://cloudaclWebFilter/content/cloudaclWebFilter.xul
+style       chrome://global/content/customizeToolbar.xul    chrome://cloudaclWebFilter/skin/overlay.css

@@ -1,0 +1,16 @@
+<!ENTITY cloudaclWebFilter.label "WebFilter Security Policy ...">
+
+<!ENTITY cloudaclWebFilterContext-addTrust.label "Add Trust Site">
+<!ENTITY cloudaclWebFilterContext-addTrust.accesskey "T">
+
+<!ENTITY cloudaclWebFilterContext-addBlock.label "Add Block Site">
+<!ENTITY cloudaclWebFilterContext-addBlock.accesskey "B">
+
+<!ENTITY cloudaclWebFilterContext-clearSite.label "Remove from Block/Trust List">
+<!ENTITY cloudaclWebFilterContext-clearSite.accesskey "C">
+
+<!ENTITY cloudaclWebFilter-feedback.label "User Feedback...">
+
+<!ENTITY cloudaclWebFilterToolbarButton.label "WebFilter">
+<!ENTITY cloudaclWebFilterToolbarButton.tooltip "One button filtering the world">
+

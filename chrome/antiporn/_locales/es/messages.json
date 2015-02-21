@@ -1,0 +1,38 @@
+{
+  "extName": {
+    "message": "Anti-Porn Pro - El mejor filtrado addon"
+  },
+  "blockBtn": {
+    "message": "Añadir bloque"
+  },
+  "blockBtnTip": {
+    "message": "Bloquear este sitio web"
+  },
+  "trustBtn": {
+    "message": "agregar confiar"
+  },
+  "trustBtnTip": {
+    "message": "Bloquee este sitio web"
+  },
+  "removeBtn": {
+    "message": "Eliminar de la lista bloque/confianza"
+  },
+  "removeBtnTip": {
+    "message": "Ni bloquear ni confiar en este sitio web"
+  },
+  "configBtn": {
+    "message": "Configuración"
+  },
+  "configBtnTip": {
+    "message": "Página de configuración abierta para establecer contraseña"
+  },
+  "feedbackBtn": {
+    "message": "Comentarios del usuario"
+  },
+  "feedbackBtnTip": {
+    "message": "Bienvenido a aportar comentarios y sugerencias"
+  },
+  "welcome": {
+    "message": "Bienvenido a Cloudacl！"
+  }
+}

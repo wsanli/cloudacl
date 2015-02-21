@@ -1,0 +1,14 @@
+/* This is just an example.  You shouldn't do this. */
+#cloudaclWebFilter-hello
+{
+  color: red!important;
+}
+#cloudaclWebFilter-toolbar-button
+{
+  list-style-image: url("chrome://cloudaclWebFilter/skin/toolbar-button.png");
+}
+
+toolbar[iconsize="small"] #cloudaclWebFilter-toolbar-button
+{
+  list-style-image: url("chrome://cloudaclWebFilter/skin/toolbar-button2.png");
+}

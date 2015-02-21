@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>AntiPorn Configuration</title>
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<link type="text/css" href="css/options.css" rel="stylesheet" />
+<link type="text/css" href="css/tabs.css" rel="stylesheet" />
+<link type="text/css" href="css/urllist.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="css/jquery.qtip.css" />
+<script type="text/javascript" src='js/jquery-1.7.2.min.js' charset="utf-8"></script>
+<script type="text/javascript" src='js/jquery.tools.min.js' charset="utf-8"></script>
+<script type="text/javascript" src='js/shared.js' charset="utf-8"></script>
+<script type="text/javascript" src='js/options.js' charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.urllist.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.dualtoggle.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.qtip.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="banner">
+            <h1><img id="icon" src="icon.png" alt="logo" />AntiPorn Options<span id="upperright">Visit <a href="http://www.cloudacl.com" target="_blank">www.cloudacl.com</a></span></h1>
+        </div>
+        <div id="info">
+            <div id="msg"></div>
+            <div id="loading" style="display: none;">Loading</div>
+        </div>
+
+        <div id="checkpass" class="box">
+	 	    <div class="header">Enter password</div>
+		    <div class="settings">
+                <form id="frmCheckpass" class="oneline" method="post">
+                    <label for="id_username">Enter your password</label><input id="rawpass" type="password"  name="rawpass"  maxlength="100" />
+                    <button type="submit" id="btnCheck" value="Check Password" name="btnCheck"><span>OK</span></button>
+                </form>
+		    </div>
+        </div>
+
+        <div id="config" class="box">
+	 	    <div class="header">Password Settings</div>
+		    <div class="settings">
+                <div id="password_setting">
+                    <span class="checkbox checkbox-with-tooltip">
+			            <input type="checkbox" id="enable_password" />
+			            <label for="enable_password">
+				            Enable Password Protection
+			            </label>
+                        <img class="tooltip-img" src="img/tooltip.png" width="16" height="16" data-tooltip="If checked, you will be asked to type in your password in order to change configuration on this page. <br/><br/>To get a password, please register your account at our website: <a href='http://www.cloudacl.com/' target='_black'>www.cloudacl.com</a>." />
+    		        </span>
+                    <button type="button" id="btnChangePassword" value="Change password" name="btnChangePassword" style="display:none;"><span>Change password</span></button>
+                </div>
+		    </div>
+        </div>
+
+        <div id="login" class="box" style="display:none;">
+	 	    <div class="header">Sign in</div>
+		    <div class="settings">
+                <form id="frmLogin" method="post" action="">
+                    <p class="formfield"><label for="id_username">Email as username</label><input id="id_username" name="username" type="email" maxlength="100" /></p>
+                    <p class="formfield"><label for="id_password">Password</label><input id="id_password" name="password" type="password" maxlength="100" /></p>
+                    <button type="submit" id="btnLogin" value="Sign in" name="btnLogin"><span>Sign in</span></button>
+                    <a href="javascript:void(0);" id="lnkRegister" target="_blank">Sign up</a>
+                </form>
+		    </div>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div id="change-password" class="box" style="display:none;">
+	 	    <div class="header">Change Password</div>
+		    <div class="settings">
+                <form id="frmChangePassword" method="post">
+                    <p class="formfield"><label for="id_old_password">Old password:</label><input id="id_old_password" name="old_password" type="password" maxlength="100" /></p>
+                    <p class="formfield"><label for="id_new_password1">Password</label><input id="id_new_password1" name="new_password1" type="password" maxlength="100" /></p>
+                    <p class="formfield"><label for="id_new_password2">Password again</label><input id="id_new_password2" name="new_password2" type="password" maxlength="100" /></p>
+                    <button type="submit" id="btnChangePasswordOK" value="Change Password" name="btnChangePasswordOK"><span>OK</span></button>
+                    &nbsp;&nbsp;&nbsp;
+                    <a id="btnChangePasswordCancel" href="javascript:void(0);">Cancel</a>
+                </form>
+            </div>
+        </div>
+
+        <div id="mode" class="box">
+            <div class="header">Working mode</div>
+            <div class="settings">
+                <div id="mode_setting">
+                    <span class="radiolist">
+                        <label><input type="radio" id="btnToParent" name="working-mode" value="parent" class="radio" />Parent</label>
+                        <label><input type="radio" id="btnToKid" name="working-mode" value="kid" class="radio" />Kids</label>
+                    </span>
+                    <br />
+                    <ul class="hori-setting" style="margin:0 auto;">
+                        <li>Toolbar Button:&nbsp;</li>
+                        <li><div class="checkbox"><input type="checkbox" id="enable_toolbar" title="" checked="checked" /><label for="enable_toolbar" title="">Enable</label></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="alert" class="box">
+	 	    <div class="header">Alert Settings</div>
+		    <div class="settings">
+                <div id="alert_setting">
+                    <ul class="hori-list">
+                        <li>Enable Alert: </li>
+                        <li><div class="checkbox"><input type="checkbox" id="alert_email" title="" /><label for="alert_email" title="">Email</label></div></li>
+                        <li><div class="checkbox" style="color: #999;"><input type="checkbox" id="alert_sms" disabled="disabled" title="SMS feature coming soon" /><label for="alert_sms" title="SMS feature coming soon">SMS</label></div></li>
+                    </ul>
+                </div>
+		    </div>
+        </div>
+
+        <div id="option" class="box">
+            <ul class="header tabs">
+                <li><a href="#">Block Policy</a></li>
+                <li><a href="#">Black List</a></li>
+                <li><a href="#">White List</a></li>
+                <li style="width: 240px;"><div class="checkbox" style="float: right;"><input type="checkbox" id="bwlist_sync" /><label for="bwlist_sync" title="">Sync black/white list</label><img class="tooltip-img" src="img/tooltip.png" width="16" height="16" data-tooltip="To syncronize local black/white list with your user account on our website." /></div></li>
+            </ul>
+            <div class="panes">
+		        <div id="policy" class="settings">
+                    <div class="checkbox">&nbsp;&nbsp;&nbsp;<span>alert?</span></div>
+                    <div class="checkbox"><input type="checkbox" id="cid1pref" /><label for="cid1pref">Block security: malware, virus, fishing,frauds</label><span><input type="checkbox" id="cid1alert" /></span></div>
+                    <div class="checkbox"><input type="checkbox" id="cid2pref" /><label for="cid2pref">Block adult material: adult content, sex, nudity</label><span><input type="checkbox" id="cid2alert" /></span></div>
+                    <div class="checkbox"><input type="checkbox" id="cid3pref" /><label for="cid3pref">Block abortion,abused drugs, marijuana</label><span><input type="checkbox" id="cid3alert" /></span></div>
+                    <div class="checkbox" style="display:none"><input type="checkbox" id="cid4pref" /><label for="cid4pref">Block bandwidth: peer2peer, online storage like box.net</label><span><input type="checkbox" id="cid4alert" /></span></div>
+                    <div class="checkbox" style="display:none"><input type="checkbox" id="cid5pref" /><label for="cid5pref">Block weapon, gambling, questionable</label><span><input type="checkbox" id="cid5alert" /></span></div>
+                    <div class="checkbox" style="display:none"><input type="checkbox" id="cid6pref" /><label for="cid6pref">Block online game like addictinggames.com, freeonlinegames.com</label><span><input type="checkbox" id="cid6alert" /></span></div>
+                    <div class="checkbox" style="display:none"><input type="checkbox" id="cid7pref" /><label for="cid7pref">Block proxy server</label><span><input type="checkbox" id="cid7alert" /></span></div>
+                    <div class="checkbox" style="display:none"><input type="checkbox" id="cid8pref" /><label for="cid8pref">Block spam web server</label><span><input type="checkbox" id="cid8alert" /></span></div>
+                    <div class="checkbox" style="display:none"><input type="checkbox" id="cid9pref" /><label for="cid9pref">Block social-networking, dating and media streaming like facebook.com, youtube.com</label><span><input type="checkbox" id="cid9alert" /></span></div>
+                </div>
+                <div class="settings">
+                    <div class="rfloat"><a id="blsw">List View</a></div>
+                    <textarea id="bltext" class="bwtext" rows="15" cols="65">bbb</textarea>
+                    <div id="bllist" class="clearfix">
+                        <ul id="bl" class="urllist" style="width:520px;">
+                        </ul>
+                    </div>
+                    <div class="lbottom">
+                        <button type="submit" id="btnSaveBL" value="Save Black List" name="btnSaveBL"><span>Save</span></button>
+                    </div>
+                </div>
+                <div class="settings">
+                    <div class="rfloat"><a id="wlsw">List View</a></div>
+                    <textarea id="wltext" class="bwtext" rows="15" cols="65">www</textarea>
+                    <div id="wllist" class="clearfix">
+                        <ul id="wl" class="urllist" style="width:520px;">
+                        </ul>
+                    </div>
+                    <div class="lbottom">
+                        <button type="submit" id="btnSaveWL" value="Save White List" name="btnSaveWL"><span>Save</span></button>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div id="buttons">
+            <div id="button-info">
+                <div id="saving" style="display: none;"><img style="position:relative;top:4px;margin-right:4px" src="img/loading.gif" width="16" height="16" />Saving</div>
+            </div>
+        </div>
+    </div>
+</body></html>

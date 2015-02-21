@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://cloudaclWebFilter/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://cloudaclWebFilter/locale/overlay.dtd">
+<overlay id="cloudaclWebFilter-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="chrome://cloudaclWebFilter/content/js/cloudacl.js" />
+    <script src="chrome://cloudaclWebFilter/content/cloudaclWebFilter.js" />
+    <script src="chrome://cloudaclWebFilter/content/js/shared.js" />
+    <script src="chrome://cloudaclWebFilter/content/js/Helpers.js" />
+    <script src="chrome://cloudaclWebFilter/content/js/xul.js" />
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle id="cloudaclWebFilter-strings" src="chrome://cloudaclWebFilter/locale/overlay.properties"/>
+    </stringbundleset>
+
+    <menupopup id="menu_ToolsPopup">
+        <menuitem id="cloudaclWebFilter-toolpref" label="&cloudaclWebFilter.label;" oncommand="cloudaclWebFilter.onMenuItemCommand_tooloption(event);"/>
+    </menupopup>
+
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="cloudaclWebFilter-toolbar-button" class="toolbarbutton-1" label="&cloudaclWebFilterToolbarButton.label;" tooltiptext="&cloudaclWebFilterToolbarButton.tooltip;" removable="true" insertbefore="urlbar-container" type="menu-button" onclick="cloudaclWebFilter.updateToolbarMenuLabel(event)">
+            <menupopup id="cloudaclWebFilter-popup">
+                <menuitem id="context-cloudaclWebFilter-addBlock" label="&cloudaclWebFilterContext-addBlock.label;"
+                      accesskey="&cloudaclWebFilterContext-addBlock.accesskey;"
+                      oncommand="cloudaclWebFilter.onMenuItemCommand_addBlock(event)"/>
+                <menuitem id="context-cloudaclWebFilter-addTrust" label="&cloudaclWebFilterContext-addTrust.label;"
+                      accesskey="&cloudaclWebFilterContext-addTrust.accesskey;"
+                      oncommand="cloudaclWebFilter.onMenuItemCommand_addTrust(event)"/>
+                <menuitem id="context-cloudaclWebFilter-clearSite" label="&cloudaclWebFilterContext-clearSite.label;"
+                      accesskey="&cloudaclWebFilterContext-clearSite.accesskey;"
+                      oncommand="cloudaclWebFilter.onMenuItemCommand_clearSite(event)"/>
+                <menuseparator id="cloudaclWebFilter-status-whitelist-sep"/>
+                <menuitem id="cloudaclWebFilter-toolpref" label="&cloudaclWebFilter.label;" oncommand="cloudaclWebFilter.onMenuItemCommand_tooloption(event);"/>
+                <menuitem id="cloudaclWebFilter-feedback" label="&cloudaclWebFilter-feedback.label;" oncommand="cloudaclWebFilter.onMenuItemCommand_feedback(event);"/>
+            </menupopup>
+        </toolbarbutton>
+    </toolbarpalette>
+
+</overlay>

@@ -1,0 +1,14 @@
+/* This is just an example.  You shouldn't do this. */
+#cloudaclAntiPorn-hello
+{
+  color: red ! important;
+}
+#cloudaclAntiPorn-toolbar-button
+{
+  list-style-image: url("chrome://cloudaclAntiPorn/skin/toolbar-button.png");
+}
+
+toolbar[iconsize="small"] #cloudaclAntiPorn-toolbar-button
+{
+  list-style-image: url("chrome://cloudaclAntiPorn/skin/toolbar-button2.png");
+}

@@ -1,0 +1,39 @@
+.urllist
+{
+    list-style: none;
+    margin: 0 !important;
+    padding: 5px;
+    font-family:Courier New;
+}
+.urllist li
+{
+    border: 1px solid #aaa;
+    text-indent: 0;
+    padding: 0;
+    margin: 2px !important;
+    list-style-image: none !important;
+    height: 28px;
+    border-radius: 4px;
+}
+.urllist li > input
+{
+    border: none;
+    margin: 3px;
+    padding: 3px 8px;
+    outline-color: blue;
+    height: 1.2em;
+}
+.urllist li > span
+{
+    float: right;
+    clear: right;
+    vertical-align: middle;
+    margin: 3px 15px;
+    color: #666;
+    width: 15px;
+}
+.urllist li > span:hover
+{
+    color: #C73328;
+    cursor: pointer!important;
+}

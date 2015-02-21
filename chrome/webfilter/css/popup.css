@@ -1,0 +1,29 @@
+﻿body{ min-width:305px;
+      font: 12px/15px "adelle-1","adelle-2", 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+      overflow:hidden; 
+      }
+input[type="text"],input[type="password"] {height: 16px; vertical-align: bottom; margin: 1px 0;}
+button {
+    margin:0px 0;
+    padding:4px 8px; 
+}
+button:hover {
+    cursor:pointer !important;
+    background-color:#F3F7FC;
+    border:1px solid #999999;
+    -webkit-border-radius:2px;    
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#dedede), to(#ffffff));
+    background-image: linear-gradient(top, #dedede, #ffffff);
+}
+#info {width:100%;}
+#msg, #loading { text-align:center; }
+#btns {}
+#btns button {width:100%;}
+#btn-option {width:100%; text-align:center; font-weight:bold;}
+#btn-feedback {width:100%; text-align:center; font-weight:bold;}
+#btn-setpass { text-align:center;width: 100%;margin-top:10px;}
+#ctrl {}
+#btn-kid {color:#21864e; float:left;}
+#btn-logout {color:#2b57af; float:right;line-height: 25px;}
+form p {margin:0 auto;}
+#frmLogin label {display:block;}

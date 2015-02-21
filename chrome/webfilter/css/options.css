@@ -1,0 +1,73 @@
+body {background:#FAFAFF;}
+.banner {
+    width: 580px;
+    margin: 10px auto;
+}
+.box {
+    -webkit-box-shadow: rgba(0,0,0,0.45) 0px 2px 4px;
+    border: 0;
+    width: 580px;
+    margin: 10px auto;
+    padding: 0 5px 5px;
+    background-color: white;    
+}
+.header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #333;
+    padding: 2px 8px;
+    border-top: 1px solid #B5C6DE;
+    border-bottom: 1px solid #B5C6DE;
+    margin: 0 -5px;
+    background-color: #EBEFF9;
+    text-shadow: 0px 1px white;
+}
+.settings {
+    margin: 10px 0;
+}
+form { text-align: center;width: 320px;margin: 0 auto;}
+form label {display: block;width:120px;float:left;text-align:left;font-weight: bold;line-height: 25px;margin: 3px 0;}
+form p {width:100%;}
+form input[type="text"],form input[type="password"],form input[type="email"] {float:left;}
+form button {clear: both;display: block;margin-left:120px;}
+
+form.oneline button {clear:none; display:inline; margin-left:0px;}
+form.oneline input[type="text"], form.oneline input[type="password"], form.oneline input[type="email"] {float:none;}
+form.oneline label{width:auto; display: inline-block; margin-right:5px;}
+#frmLogin {line-height: 35px;}
+
+#icon { margin:0 5px 0 0; vertical-align:middle; width:1.6em; height:1.6em; }
+#upperright {float: right; font-size: 12px; line-height: 24px;}
+#main {width:580px;clear: both;margin: 0 auto;}
+#info {width:100%;margin: 10px auto;padding: 0 5px 5px;border: 0; }
+#msg, #loading { text-align:center; }
+#btnChangePassword, #btnChangeEmail, #btnToKidmode {float:right;}
+#btnLogin {display: inline-block;float: left;}
+
+#lnkRegister {
+float: left;
+margin-left: 55px;
+vertical-align: bottom;
+}
+#button-info { display: inline-block; line-height: 32px; padding-left: 20px; }
+
+#mode_setting { text-align:center;}
+
+textarea.bwtext {border: 1px solid #CCC;margin: 10px;padding: 5px 10px;outline-color: #B5C6DE;}
+div.rfloat {float: right;clear: right;margin-right: 16px;height: 20px;}
+div.lbottom {clear: left;margin-left: 16px;}
+
+#alert_setting { text-align:center;}
+ul.hori-list {list-style: none; padding: 0; height: 2.8em; display: block; background-color: transparent;margin: 0 auto;width: 300px;}
+ul.hori-list li { float: left; text-indent: 0; padding: 0 10px; margin: 0 !important; list-style-image: none !important; line-height: 25px;}
+ul.hori-list li > div {}
+
+#policy > div > span {float:right;width: 70px; text-align: center;}
+#policy > div > span > input { text-align:center; margin:0 auto; float: right; margin-right: 25px;}
+
+ul.hori-setting {list-style: none; padding: 0; height: 2.8em; display: block; background-color: transparent;margin: 0 0;width: 150px;}
+ul.hori-setting li { float: left; text-indent: 0; padding: 0 0; margin: 0 !important; list-style-image: none !important; line-height: 25px;}
+ul.hori-setting li > div {}
+
+.tooltip-img {position:relative;top:4px;margin-right:4px;margin-left:4px;}

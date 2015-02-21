@@ -1,0 +1,38 @@
+﻿{
+  "extName": {
+    "message": "WebFilter Pro - 最好的网络过滤扩展"
+  },
+  "blockBtn": {
+    "message": "加入拦截"
+  },
+  "blockBtnTip": {
+    "message": "阻止访问这个网站"
+  },
+  "trustBtn": {
+    "message": "加入信任"
+  },
+  "trustBtnTip": {
+    "message": "信任这个网站"
+  },
+  "removeBtn": {
+    "message": "从拦截/信任表中移除"
+  },
+  "removeBtnTip": {
+    "message": "既不阻止访问也不信任这个网站"
+  },
+  "configBtn": {
+    "message": "设置"
+  },
+  "configBtnTip": {
+    "message": "打开设置页可设置密码保护"
+  },
+  "feedbackBtn": {
+    "message": "用户反馈"
+  },
+  "feedbackBtnTip": {
+    "message": "欢迎向Cloudacl提出意见"
+  },
+  "welcome": {
+    "message": "欢迎来到Cloudacl！"
+  }
+}

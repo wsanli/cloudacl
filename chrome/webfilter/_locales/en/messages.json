@@ -1,0 +1,39 @@
+{
+  "extName": {
+    "message": "WebFilter Pro - The best filtering addon!"
+  },
+  "blockBtn": {
+    "message": "Add Block"
+  },
+  "blockBtnTip": {
+    "message": "Block this site"
+  },
+  "trustBtn": {
+    "message": "Add Trust"
+  },
+  "trustBtnTip": {
+    "message": "Trust this site"
+  },
+  "removeBtn": {
+    "message": "Remove from Block/Trust List"
+  },
+  "removeBtnTip": {
+    "message": "Neither block nor trust this site"
+  },
+  "configBtn": {
+    "message": "Settings"
+  },
+  "configBtnTip": {
+    "message": "Open configuration page to set password"
+  },
+  "feedbackBtn": {
+    "message": "User Feedback"
+  },
+  "feedbackBtnTip": {
+    "message": "cloudacl user feedback"
+  },
+  "welcome": {
+    "message": "Welcome to cloudacl!",
+    "description": "welcome message"
+  }
+}

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title></title>
+   <style type="text/css">
+       html, body { margin: 0; padding: 0; width: 100%; overflow: auto; min-height: 120px; }
+       a { cursor: pointer; }
+       #content {padding: 30px; font: 18px/1.2em palatino linotype;overflow-x: hidden;}
+    </style>
+   <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+   <script type="text/javascript">
+
+       $(document).ready(function () {
+           var backgroundPage = chrome.extension.getBackgroundPage();
+           var msg = backgroundPage.notifymessage.pop();
+           if (msg && msg.text) {
+               $('#content').html(msg.text);
+           }
+       });
+
+   </script>
+</head>
+<body>
+<div id="content">
+</div>
+</body>
+</html>

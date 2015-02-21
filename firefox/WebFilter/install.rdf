@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:id>info@cloudacl.com</em:id>
+        <em:type>2</em:type>
+        <em:name>WebFilter - The content filtering addon!</em:name>
+        <em:version>0.19.6.10</em:version>
+        <em:creator>Cloudacl Lab</em:creator>
+        <em:contributor>swang, azhang</em:contributor>
+        <em:description>WebFilter is cloud based content filtering application monitoring 8 million web sites and billion web pages to provide your family especially your kids with a safer browsing experience</em:description>
+        <em:optionsURL>chrome://cloudaclWebFilter/content/options.html</em:optionsURL>
+        <em:iconURL>chrome://cloudaclWebFilter/content/icon.png</em:iconURL>
+        <em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <!-- Firefox -->
+                <em:minVersion>2.0</em:minVersion>
+                <em:maxVersion>37.0</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+    </Description>
+</RDF>

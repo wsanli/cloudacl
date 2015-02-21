@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://cloudaclAntiPorn/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://cloudaclAntiPorn/locale/overlay.dtd">
+<overlay id="cloudaclAntiPorn-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="chrome://cloudaclAntiPorn/content/js/cloudacl.js" />
+    <script src="chrome://cloudaclAntiPorn/content/cloudaclAntiPorn.js" />
+    <script src="chrome://cloudaclAntiPorn/content/js/shared.js" />
+    <script src="chrome://cloudaclAntiPorn/content/js/Helpers.js" />
+    <script src="chrome://cloudaclAntiPorn/content/js/xul.js" />
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle id="cloudaclAntiPorn-strings" src="chrome://cloudaclAntiPorn/locale/overlay.properties"/>
+    </stringbundleset>
+
+    <menupopup id="menu_ToolsPopup">
+        <menuitem id="cloudaclAntiPorn-toolpref" label="&cloudaclAntiPorn.label;" oncommand="cloudaclAntiPorn.onMenuItemCommand_tooloption(event);"/>
+    </menupopup>
+
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="cloudaclAntiPorn-toolbar-button" class="toolbarbutton-1" label="&cloudaclAntiPornToolbarButton.label;" tooltiptext="&cloudaclAntiPornToolbarButton.tooltip;" removable="true" insertbefore="urlbar-container" type="menu-button" onclick="cloudaclAntiPorn.updateToolbarMenuLabel(event)">
+            <menupopup id="cloudaclAntiPorn-popup">
+                <menuitem id="context-cloudaclAntiPorn-addBlock" label="&cloudaclAntiPornContext-addBlock.label;"
+                      accesskey="&cloudaclAntiPornContext-addBlock.accesskey;"
+                      oncommand="cloudaclAntiPorn.onMenuItemCommand_addBlock(event)"/>
+                <menuitem id="context-cloudaclAntiPorn-addTrust" label="&cloudaclAntiPornContext-addTrust.label;"
+                      accesskey="&cloudaclAntiPornContext-addTrust.accesskey;"
+                      oncommand="cloudaclAntiPorn.onMenuItemCommand_addTrust(event)"/>
+                <menuitem id="context-cloudaclAntiPorn-clearSite" label="&cloudaclAntiPornContext-clearSite.label;"
+                      accesskey="&cloudaclAntiPornContext-clearSite.accesskey;"
+                      oncommand="cloudaclAntiPorn.onMenuItemCommand_clearSite(event)"/>
+                <menuseparator id="cloudaclAntiPorn-status-whitelist-sep"/>
+                <menuitem id="cloudaclAntiPorn-toolpref" label="&cloudaclAntiPorn.label;" oncommand="cloudaclAntiPorn.onMenuItemCommand_tooloption(event);"/>
+                <menuitem id="cloudaclAntiPorn-feedback" label="&cloudaclAntiPorn-feedback.label;" oncommand="cloudaclAntiPorn.onMenuItemCommand_feedback(event);"/>
+            </menupopup>
+        </toolbarbutton>
+    </toolbarpalette>
+
+</overlay>

@@ -1,0 +1,16 @@
+<!ENTITY cloudaclAntiPorn.label "AntiPorn Security Policy ...">
+
+<!ENTITY cloudaclAntiPornContext-addTrust.label "Add Trust Site">
+<!ENTITY cloudaclAntiPornContext-addTrust.accesskey "T">
+
+<!ENTITY cloudaclAntiPornContext-addBlock.label "Add Block Site">
+<!ENTITY cloudaclAntiPornContext-addBlock.accesskey "B">
+
+<!ENTITY cloudaclAntiPornContext-clearSite.label "Remove from Block/Trust List">
+<!ENTITY cloudaclAntiPornContext-clearSite.accesskey "C">
+
+<!ENTITY cloudaclAntiPorn-feedback.label "User Feedback...">
+
+<!ENTITY cloudaclAntiPornToolbarButton.label "AntiPorn">
+<!ENTITY cloudaclAntiPornToolbarButton.tooltip "One button filtering the world">
+
